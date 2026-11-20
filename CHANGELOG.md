@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/Sasha212015/opatches/compare/v1.0.3...v1.0.4) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use softprops/action-gh-release for reliable asset upload ([ca31743](https://github.com/Sasha212015/opatches/commit/ca3174337dec4cfed768e8d7aea378086bbc4cc6))
+
 ## [1.0.3](https://github.com/Sasha212015/opatches/compare/v1.0.2...v1.0.3) (2026-11-20)
 
 ### 🐛 Bug Fixes
