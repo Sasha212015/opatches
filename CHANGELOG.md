@@ -1,3 +1,9 @@
+## [1.0.11](https://github.com/Sasha212015/opatches/compare/v1.0.10...v1.0.11) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use gh CLI to upload .mpp with versioned filename ([257c101](https://github.com/Sasha212015/opatches/commit/257c1015047eb75e133caaf6cba271b9e9b2a74f))
+
 ## [1.0.10](https://github.com/Sasha212015/opatches/compare/v1.0.9...v1.0.10) (2026-11-20)
 
 ### 🐛 Bug Fixes
