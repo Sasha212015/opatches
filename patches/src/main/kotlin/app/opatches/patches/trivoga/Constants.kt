@@ -13,7 +13,7 @@ object Constants {
         appIconColor = 0xE53935,
         signatures = setOf(
             // SHA-256 signature of the original Ukraine Alarm APK from Google Play
-            "6cfd0e696cf64b85d67ffdaadfc9556f9f8384eb"
+            "6a49ad028e4e23002bb49a2191e4807dc4cb1d9c151961c06232a191b7acb429"
         ),
         targets = listOf(
             AppTarget(
