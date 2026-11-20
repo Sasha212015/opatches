@@ -1,3 +1,9 @@
+## [1.0.12](https://github.com/Sasha212015/opatches/compare/v1.0.11...v1.0.12) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use cp instead of mv to keep original .mpp for attestation ([aa2e2f8](https://github.com/Sasha212015/opatches/commit/aa2e2f8779b8464f84457360d9c803bdf92c2677))
+
 ## [1.0.11](https://github.com/Sasha212015/opatches/compare/v1.0.10...v1.0.11) (2026-11-20)
 
 ### 🐛 Bug Fixes
