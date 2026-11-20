@@ -1,3 +1,13 @@
+## [1.0.1](https://github.com/Sasha212015/opatches/compare/v1.0.0...v1.0.1) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* appIconColor must be 0xRRGGBB format (no alpha) ([a82b7fb](https://github.com/Sasha212015/opatches/commit/a82b7fbca770600b84e82b7d47562979dd1d0b41))
+* run buildAndroid then generatePatchesList in prepareCmd ([8732d3c](https://github.com/Sasha212015/opatches/commit/8732d3c92a6a7c0f882ffb4edc2782bee81c51ec))
+* run generatePatchesList after build to populate patches-list.json ([36994ff](https://github.com/Sasha212015/opatches/commit/36994ff2da4013b235fd5a7ff3535bf28ffb42f9))
+* use tasks { ... } DSL for finalizedBy ([20c53a0](https://github.com/Sasha212015/opatches/commit/20c53a07b11444a1b75ef3b2ea474475d6a30407))
+* use tasks.named(...).configure for finalizedBy ([35b331d](https://github.com/Sasha212015/opatches/commit/35b331db408721fc7f1f30952c686f01ca6caf97))
+
 ## 1.0.0 (2026-11-20)
 
 ### ✨ New Features

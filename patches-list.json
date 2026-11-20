@@ -1,5 +1,33 @@
 {
-  "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release runs.",
-  "version": "1.0.0",
-  "patches": []
+  "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
+  "version": "unspecified",
+  "patches": [
+    {
+      "name": "Custom API Relay URL",
+      "description": "Replace air-save.ops.ajax.systems with custom relay server URL",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.ukrainealarm",
+          "name": "Trivoga (Повітряна тривога)",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E53935",
+          "signatures": null,
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "7.2.2",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
 }
