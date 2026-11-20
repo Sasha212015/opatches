@@ -7,7 +7,3 @@ repositories {
     mavenCentral()
     maven { url = uri("https://jitpack.io") }
 }
-
-dependencies {
-    compileOnly(libs.gson)
-}
