@@ -12,16 +12,18 @@
           "packageName": "com.ukrainealarm",
           "name": "Trivoga (Повітряна тривога)",
           "description": null,
-          "apkFileType": "APK",
+          "apkFileType": "APK_REQUIRED",
           "appIconColor": "#E53935",
-          "signatures": null,
+          "signatures": [
+            "6a49ad028e4e23002bb49a2191e4807dc4cb1d9c151961c06232a191b7acb429"
+          ],
           "formFactor": "MOBILE",
           "targets": [
             {
               "version": "7.2.2",
               "versionCodes": null,
               "isExperimental": false,
-              "minSdk": null,
+              "minSdk": 21,
               "description": null
             }
           ]

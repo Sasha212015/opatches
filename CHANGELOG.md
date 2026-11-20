@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/Sasha212015/opatches/compare/v1.0.14...v1.0.15) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* add signatures, apkFileType APK_REQUIRED, minSdk, fix manifest version ([7c44b4f](https://github.com/Sasha212015/opatches/commit/7c44b4fe79ce8d16fc701ba29e0ba6e751ec2118))
+* use correct SHA-256 signature from original APK ([0f8c924](https://github.com/Sasha212015/opatches/commit/0f8c924d4a9b37e4417d8f62de8fcdc98ccc69f6))
+
 ## [1.0.14](https://github.com/Sasha212015/opatches/compare/v1.0.13...v1.0.14) (2026-11-20)
 
 ### 🐛 Bug Fixes
