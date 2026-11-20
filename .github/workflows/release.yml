@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GRADLE_OPTS: "-Dorg.gradle.internal.launcher.welcome=false"
+      GPR_USER: ${{ github.actor }}
+      GPR_KEY: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -43,14 +44,27 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build patches
+        run: ./gradlew buildAndroid generatePatchesList
+
       - name: Release
         uses: cycjimmy/semantic-release-action@v8
         id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Pass token to Gradle for GitHub Packages auth via env vars
           GPR_USER: ${{ github.actor }}
           GPR_KEY: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload .mpp artifact
+        if: steps.release.outputs.new_release_published == 'true'
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: patches/build/libs/*.mpp
+          asset_name: patches-${{ steps.release.outputs.new_release_version }}.mpp
+          asset_content_type: application/octet-stream
 
       - name: Attest
         if: steps.release.outputs.new_release_published == 'true'
