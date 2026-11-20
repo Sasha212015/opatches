@@ -1,3 +1,9 @@
+## [1.0.13](https://github.com/Sasha212015/opatches/compare/v1.0.12...v1.0.13) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* ensure git push permissions for semantic-release notes ([df76148](https://github.com/Sasha212015/opatches/commit/df761487488fda87f5c13b06e8bfb0e5f6483ddd))
+
 ## [1.0.12](https://github.com/Sasha212015/opatches/compare/v1.0.11...v1.0.12) (2026-11-20)
 
 ### 🐛 Bug Fixes
