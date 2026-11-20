@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/Sasha212015/opatches/compare/v1.0.5...v1.0.6) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use softprops/action-gh-release for reliable asset upload without upload_url ([43f974a](https://github.com/Sasha212015/opatches/commit/43f974a2eeea1b69b71d3a0fc569a859b69316d9))
+
 ## [1.0.5](https://github.com/Sasha212015/opatches/compare/v1.0.4...v1.0.5) (2026-11-20)
 
 ### 🐛 Bug Fixes
