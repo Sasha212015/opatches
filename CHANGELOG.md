@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/Sasha212015/opatches/compare/v1.1.1...v1.1.2) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* try multiple possible class names for signature verification bypass ([548279e](https://github.com/Sasha212015/opatches/commit/548279e559a14ae3bc878825d679b6a7de5b4e2f))
+
 ## [1.1.1](https://github.com/Sasha212015/opatches/compare/v1.1.0...v1.1.1) (2026-11-20)
 
 ### 🐛 Bug Fixes
