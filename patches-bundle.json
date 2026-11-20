@@ -4,5 +4,6 @@
   "description": "Custom Morphe patches",
   "patches": [
     "trivogaPatch"
-  ]
+  ],
+  "downloadUrlTemplate": "https://github.com/${owner}/${repo}/releases/download/v${version}/patches-${version}.mpp"
 }
