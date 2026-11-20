@@ -40,7 +40,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "./gradlew build"
+        "prepareCmd": "./gradlew buildAndroid generatePatchesList"
       }
     ],
     [

@@ -27,11 +27,6 @@ tasks {
         mainClass.set("util.PatchListGeneratorKt")
     }
 
-    // Run generatePatchesList after build
-    tasks.named("build") {
-        configure { finalizedBy("generatePatchesList") }
-    }
-
     publish {
         dependsOn("generatePatchesList")
     }
