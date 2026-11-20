@@ -9,8 +9,7 @@ import app.opatches.patches.trivoga.Constants.COMPATIBILITY_TRIVOGA
 val trivogaPatch = patch(
     name = "Custom API Relay URL",
     description = "Replace air-save.ops.ajax.systems with custom relay server URL",
-    default = true,
-    category = "Network"
+    default = true
 ) {
     compatibleWith(COMPATIBILITY_TRIVOGA)
 
