@@ -1,5 +1,4 @@
 plugins {
-    kotlin("jvm") version "1.9.24"
     id("app.morphe.patches") version "2.1.1"
 }
 
@@ -14,6 +13,5 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.kotlin.stdlib)
     compileOnly(libs.gson)
 }
