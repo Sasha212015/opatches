@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/Sasha212015/opatches/compare/v1.0.16...v1.1.0) (2026-11-20)
+
+### ✨ New Features
+
+* add signature bypass patches for Trivoga app ([e2b0769](https://github.com/Sasha212015/opatches/commit/e2b07697747b44d6e8896049cef4fac652d992e9))
+
+### 🐛 Bug Fixes
+
+* add missing import for addInstructions extension ([53ee147](https://github.com/Sasha212015/opatches/commit/53ee1475e248bc45e021dce78492ad7f727aa96c))
+* fix AccessFlags import to use dexlib2 ([aff435e](https://github.com/Sasha212015/opatches/commit/aff435e98b5b0dcf396d90252a780c5b77fbaef8))
+* use integer index for addInstructions instead of MatchAfterImmediately ([8be059c](https://github.com/Sasha212015/opatches/commit/8be059c06e8f07aae8ce2074cb43353b5d1225f0))
+
 ## [1.0.16](https://github.com/Sasha212015/opatches/compare/v1.0.15...v1.0.16) (2026-11-20)
 
 ### 🐛 Bug Fixes
