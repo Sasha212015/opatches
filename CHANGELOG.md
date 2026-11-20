@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/Sasha212015/opatches/compare/v1.0.4...v1.0.5) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use upload_url from semantic-release output for asset upload ([d27ebb2](https://github.com/Sasha212015/opatches/commit/d27ebb2ed23ca3bb1159178418c54c493b3bee78))
+
 ## [1.0.4](https://github.com/Sasha212015/opatches/compare/v1.0.3...v1.0.4) (2026-11-20)
 
 ### 🐛 Bug Fixes
