@@ -1,3 +1,9 @@
+## [1.0.8](https://github.com/Sasha212015/opatches/compare/v1.0.7...v1.0.8) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use tag_name with softprops/action-gh-release instead of upload_url ([f3403d6](https://github.com/Sasha212015/opatches/commit/f3403d6f00bf366d039fcdb41a8b5e110c8ada99))
+
 ## [1.0.7](https://github.com/Sasha212015/opatches/compare/v1.0.6...v1.0.7) (2026-11-20)
 
 ### 🐛 Bug Fixes
