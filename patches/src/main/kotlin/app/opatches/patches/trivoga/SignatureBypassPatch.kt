@@ -108,38 +108,3 @@ val signatureBypassPatchAggressive = patch(
         )
     }
 }
-
-/**
- * Patch to also bypass the signature check in O/d class (font provider signature check)
- */
-val fontProviderSignatureBypass = patch(
-    name = "Bypass Font Provider Signature Check",
-    description = "Bypass signature check in font provider (O/d class)",
-    default = true
-) {
-    compatibleWith(Constants.COMPATIBILITY_TRIVOGA)
-
-    execute {
-        Fingerprint(
-            definingClass = "LO/d;",
-            name = "b",
-            accessFlags = listOf(
-                AccessFlags.PUBLIC,
-                AccessFlags.STATIC
-            ),
-            returnType = "Landroid/content/pm/ProviderInfo;",
-            parameters = listOf(
-                "Landroid/content/pm/PackageManager;",
-                "LO/e;",
-                "Landroid/content/res/Resources;"
-            )
-        ).method.addInstructions(
-            0,
-            """
-                # Skip the signature comparison in font provider
-                # The method compares signatures at lines 153-155
-                goto :cond_3
-            """
-        )
-    }
-}
