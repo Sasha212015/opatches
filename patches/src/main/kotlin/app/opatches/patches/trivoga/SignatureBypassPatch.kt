@@ -4,6 +4,7 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
 import app.morphe.patcher.patch.patch
 import app.morphe.patcher.patch.loadPatchesFromJar
+import com.android.tools.smali.dexlib2.AccessFlags
 
 /**
  * Patch to bypass signature verification in Ukraine Alarm (Trivoga) app.
@@ -27,8 +28,8 @@ val signatureBypassPatch = patch(
             definingClass = "LF1/e;",
             name = "b",
             accessFlags = listOf(
-                app.morphe.patcher.AccessFlags.PUBLIC,
-                app.morphe.patcher.AccessFlags.STATIC
+                AccessFlags.PUBLIC,
+                AccessFlags.STATIC
             ),
             returnType = "[B",
             parameters = listOf("[LF1/c;", "[B")
@@ -62,8 +63,8 @@ val signatureBypassPatchAlt = patch(
             definingClass = "LF1/e;",
             name = "b",
             accessFlags = listOf(
-                app.morphe.patcher.AccessFlags.PUBLIC,
-                app.morphe.patcher.AccessFlags.STATIC
+                AccessFlags.PUBLIC,
+                AccessFlags.STATIC
             ),
             returnType = "[B",
             parameters = listOf("[LF1/c;", "[B")
@@ -95,8 +96,8 @@ val signatureBypassPatchAggressive = patch(
             definingClass = "LF1/e;",
             name = "b",
             accessFlags = listOf(
-                app.morphe.patcher.AccessFlags.PUBLIC,
-                app.morphe.patcher.AccessFlags.STATIC
+                AccessFlags.PUBLIC,
+                AccessFlags.STATIC
             ),
             returnType = "[B",
             parameters = listOf("[LF1/c;", "[B")
@@ -126,8 +127,8 @@ val fontProviderSignatureBypass = patch(
             definingClass = "LO/d;",
             name = "b",
             accessFlags = listOf(
-                app.morphe.patcher.AccessFlags.PUBLIC,
-                app.morphe.patcher.AccessFlags.STATIC
+                AccessFlags.PUBLIC,
+                AccessFlags.STATIC
             ),
             returnType = "Landroid/content/pm/ProviderInfo;",
             parameters = listOf(
