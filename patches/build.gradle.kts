@@ -28,9 +28,8 @@ tasks {
     }
 
     // Run generatePatchesList after build
-    tasks {
-        val buildTask by existing
-        buildTask.finalizedBy("generatePatchesList")
+    tasks.named("build") {
+        configure { finalizedBy("generatePatchesList") }
     }
 
     publish {
