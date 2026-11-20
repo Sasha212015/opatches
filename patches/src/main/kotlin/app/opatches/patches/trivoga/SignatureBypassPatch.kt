@@ -2,6 +2,7 @@ package app.opatches.patches.trivoga
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.patch
 import app.morphe.patcher.patch.loadPatchesFromJar
 import com.android.tools.smali.dexlib2.AccessFlags
