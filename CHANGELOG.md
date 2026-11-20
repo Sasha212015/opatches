@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/Sasha212015/opatches/compare/v1.0.6...v1.0.7) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* use upload-release-asset with upload_url for reliable asset upload ([5bb895a](https://github.com/Sasha212015/opatches/commit/5bb895a1658553a6d7d03567b1bfb1e173d57307))
+
 ## [1.0.6](https://github.com/Sasha212015/opatches/compare/v1.0.5...v1.0.6) (2026-11-20)
 
 ### 🐛 Bug Fixes
