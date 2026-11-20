@@ -1,3 +1,9 @@
+## [1.0.16](https://github.com/Sasha212015/opatches/compare/v1.0.15...v1.0.16) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* update patches-list.json version after release with correct version ([0a364a6](https://github.com/Sasha212015/opatches/commit/0a364a6c5aa17ee39d19b4b1f9297dde2296b24c))
+
 ## [1.0.15](https://github.com/Sasha212015/opatches/compare/v1.0.14...v1.0.15) (2026-11-20)
 
 ### 🐛 Bug Fixes
