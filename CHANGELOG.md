@@ -1,3 +1,9 @@
+## [1.0.14](https://github.com/Sasha212015/opatches/compare/v1.0.13...v1.0.14) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* add downloadUrlTemplate to patches-bundle.json for Morphe Manager ([492e94f](https://github.com/Sasha212015/opatches/commit/492e94fdb6f155a015dd51bd4e9cc5bd98a90684))
+
 ## [1.0.13](https://github.com/Sasha212015/opatches/compare/v1.0.12...v1.0.13) (2026-11-20)
 
 ### 🐛 Bug Fixes
