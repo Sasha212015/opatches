@@ -4,12 +4,13 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
+        mavenCentral()
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/MorpheApp/registry")
             credentials {
-                username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("GITHUB_ACTOR")
-                password = providers.gradleProperty("gpr.key").orNull ?: System.getenv("GITHUB_TOKEN")
+                username = providers.environmentVariable("GPR_USER").orNull
+                password = providers.environmentVariable("GPR_KEY").orNull
             }
         }
         maven { url = uri("https://jitpack.io") }
