@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/Sasha212015/opatches/compare/v1.0.8...v1.0.9) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* upload .mpp with versioned name (patches-${version}.mpp) to match patches-bundle.json template ([b140489](https://github.com/Sasha212015/opatches/commit/b140489e41c3c08be8821d260c273f6a0a29aedc))
+
 ## [1.0.8](https://github.com/Sasha212015/opatches/compare/v1.0.7...v1.0.8) (2026-11-20)
 
 ### 🐛 Bug Fixes
