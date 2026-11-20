@@ -1,36 +1,7 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0",
+  "version": "unspecified",
   "patches": [
-    {
-      "name": "Bypass Font Provider Signature Check",
-      "description": "Bypass signature check in font provider (O/d class)",
-      "default": true,
-      "category": null,
-      "compatiblePackages": [
-        {
-          "packageName": "com.ukrainealarm",
-          "name": "Trivoga (Повітряна тривога)",
-          "description": null,
-          "apkFileType": "APK_REQUIRED",
-          "appIconColor": "#E53935",
-          "signatures": [
-            "6a49ad028e4e23002bb49a2191e4807dc4cb1d9c151961c06232a191b7acb429"
-          ],
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": "7.2.2",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": 21,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
     {
       "name": "Bypass Signature Verification",
       "description": "Removes signature verification to allow repackaged APK to run",

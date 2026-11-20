@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/Sasha212015/opatches/compare/v1.1.0...v1.1.1) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* remove problematic font provider patch, keep only working signature bypass patches ([8877c13](https://github.com/Sasha212015/opatches/commit/8877c131587282c733108119ead426be98ac2a0d))
+
 ## [1.1.0](https://github.com/Sasha212015/opatches/compare/v1.0.16...v1.1.0) (2026-11-20)
 
 ### ✨ New Features
