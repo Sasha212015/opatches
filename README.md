@@ -47,3 +47,6 @@ The Trivoga patch modifies 4 string constants in the DEX:
 - `V5/m.j()` - PROD URL
 
 All replaced with `https://trivoga.oleksandr.pp.ua/`
+
+<!-- PATCHES_START -->
+<!-- PATCHES_END -->
