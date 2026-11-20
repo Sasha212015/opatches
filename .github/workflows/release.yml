@@ -61,7 +61,7 @@ jobs:
           # Find the built .mpp file and rename it with version
           MPP_FILE=$(find patches/build/libs -name "*.mpp" | head -1)
           VERSION="${{ steps.release.outputs.new_release_version }}"
-          mv "$MPP_FILE" "patches-${VERSION}.mpp"
+          cp "$MPP_FILE" "patches-${VERSION}.mpp"
 
           # Upload using gh CLI (available in GitHub Actions)
           gh release upload "${{ steps.release.outputs.new_release_git_tag }}" "patches-${VERSION}.mpp" --clobber
