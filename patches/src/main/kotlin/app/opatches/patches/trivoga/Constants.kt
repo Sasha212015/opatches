@@ -10,7 +10,7 @@ object Constants {
         name = "Trivoga (Повітряна тривога)",
         packageName = "com.ukrainealarm",
         apkFileType = ApkFileType.APK,
-        appIconColor = 0xFFE53935.toInt(), // Red color from app icon
+        appIconColor = 0xE53935, // Red color from app icon (0xRRGGBB format)
         targets = listOf(
             AppTarget(
                 version = "7.2.2"
