@@ -9,11 +9,17 @@ object Constants {
     val COMPATIBILITY_TRIVOGA = Compatibility(
         name = "Trivoga (Повітряна тривога)",
         packageName = "com.ukrainealarm",
-        apkFileType = ApkFileType.APK,
-        appIconColor = 0xE53935, // Red color from app icon (0xRRGGBB format)
+        apkFileType = ApkFileType.APK_REQUIRED,
+        appIconColor = 0xE53935,
+        signatures = setOf(
+            // SHA-256 signature of the original Ukraine Alarm APK from Google Play
+            "6cfd0e696cf64b85d67ffdaadfc9556f9f8384eb"
+        ),
         targets = listOf(
             AppTarget(
-                version = "7.2.2"
+                version = "7.2.2",
+                minSdk = 21,
+                isExperimental = false
             )
         )
     )

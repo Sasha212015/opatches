@@ -31,3 +31,10 @@ tasks {
         dependsOn("generatePatchesList")
     }
 }
+
+// Set manifest version from project version
+tasks.withType<Jar> {
+    manifest {
+        attributes["Version"] = project.version.toString()
+    }
+}
