@@ -1,9 +1,8 @@
 package app.opatches.patches.trivoga
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
-import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.patch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.loadPatchesFromJar
 import com.android.tools.smali.dexlib2.AccessFlags
 
@@ -35,13 +34,10 @@ val signatureBypassPatch = patch(
             returnType = "[B",
             parameters = listOf("[LF1/c;", "[B")
         ).method.addInstructions(
-            // Add instructions at the point where the comparison result is checked
-            // Original: if-eqz v2, :cond_1 (jump to failure if signatures don't match)
-            // We replace this with a goto to the success path
-            MatchAfterImmediately(),
+            0, // At the beginning of the method
             """
                 # Skip the signature verification failure path
-                # Original: if-eqz v2, :cond_1
+                # Original: if-eqz v2, :cond_1 (jump to failure if signatures don't match)
                 # Replace with: goto :goto_1 (always take success path)
                 goto :goto_1
             """
@@ -70,7 +66,7 @@ val signatureBypassPatchAlt = patch(
             returnType = "[B",
             parameters = listOf("[LF1/c;", "[B")
         ).method.addInstructions(
-            MatchAfterImmediately(),
+            0,
             """
                 # Make Arrays.equals always return true (0x1)
                 const/4 v2, 0x1
@@ -138,7 +134,7 @@ val fontProviderSignatureBypass = patch(
                 "Landroid/content/res/Resources;"
             )
         ).method.addInstructions(
-            MatchAfterImmediately(),
+            0,
             """
                 # Skip the signature comparison in font provider
                 # The method compares signatures at lines 153-155
