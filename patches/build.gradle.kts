@@ -4,10 +4,10 @@ patches {
     about {
         name = "opatches"
         description = "Custom patches for various apps"
-        source = "https://github.com/USERNAME/opatches"
-        author = "Your Name"
-        contact = "your@email.com"
-        website = "https://github.com/USERNAME/opatches"
+        source = "https://github.com/Sasha212015/opatches"
+        author = "Sasha212015"
+        contact = "sasha212015@example.com"
+        website = "https://github.com/Sasha212015/opatches"
         license = "GPLv3"
     }
 }
@@ -22,7 +22,7 @@ dependencies {
 tasks {
     register<JavaExec>("generatePatchesList") {
         description = "Build patch with patch list"
-        dependsOn(build)
+        dependsOn("buildAndroid")
         classpath = sourceSets["main"].runtimeClasspath + patchListGeneratorClasspath
         mainClass.set("util.PatchListGeneratorKt")
     }
