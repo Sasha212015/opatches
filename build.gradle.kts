@@ -1,7 +1,3 @@
-plugins {
-    id("app.morphe.patches") version "2.1.1"
-}
-
 group = "app.opatches"
 version = "1.0.0"
 
