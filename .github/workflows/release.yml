@@ -14,6 +14,8 @@ jobs:
       id-token: write
       attestations: write
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -31,6 +33,16 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: wrapper
+
+      - name: Configure GitHub Packages auth
+        run: |
+          echo "gpr.user=${GITHUB_ACTOR}" >> gradle.properties
+          echo "gpr.key=${GITHUB_TOKEN}" >> gradle.properties
 
       - name: Install dependencies
         run: npm install
@@ -50,6 +62,4 @@ jobs:
 
       - name: Verify project compiles
         if: steps.release.outputs.new_release_published != 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew :patches:build clean --no-daemon
+        run: ./gradlew :patches:buildAndroid clean --no-daemon
