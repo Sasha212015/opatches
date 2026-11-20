@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Custom Morphe patches",
   "patches": [
-    "trivogaPatch"
+    "trivogaPatch",
+    "signatureBypassPatch",
+    "fontProviderSignatureBypass"
   ],
   "downloadUrlTemplate": "https://github.com/${owner}/${repo}/releases/download/v${version}/patches-${version}.mpp"
 }
