@@ -1,0 +1,12 @@
+{
+  "name": "opatches",
+  "version": "1.0.0",
+  "description": "Custom Morphe patches",
+  "private": true,
+  "scripts": {
+    "build": "./gradlew build",
+    "clean": "./gradlew clean"
+  },
+  "author": "Your Name",
+  "license": "GPL-3.0"
+}

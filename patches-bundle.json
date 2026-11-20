@@ -1,0 +1,8 @@
+{
+  "name": "opatches",
+  "version": "1.0.0",
+  "description": "Custom Morphe patches",
+  "patches": [
+    "trivogaPatch"
+  ]
+}
