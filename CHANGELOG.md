@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/Sasha212015/opatches/compare/v1.0.2...v1.0.3) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* build patches before semantic-release, upload .mpp manually ([3e6403e](https://github.com/Sasha212015/opatches/commit/3e6403ea46934a69ef74aad745d236b8e09a1656))
+
 ## [1.0.2](https://github.com/Sasha212015/opatches/compare/v1.0.1...v1.0.2) (2026-11-20)
 
 ### 🐛 Bug Fixes
