@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Sasha212015/opatches/compare/v1.0.1...v1.0.2) (2026-11-20)
+
+### 🐛 Bug Fixes
+
+* add GitHub Packages auth for Gradle in CI ([d99ff53](https://github.com/Sasha212015/opatches/commit/d99ff530d9ef4fc5891f9676affb6668f9909ed2))
+* use env vars for GitHub Packages auth, don't write token to gradle.properties ([7af2e3d](https://github.com/Sasha212015/opatches/commit/7af2e3dea23365520177d95d34263be5b41d825a))
+
 ## [1.0.1](https://github.com/Sasha212015/opatches/compare/v1.0.0...v1.0.1) (2026-11-20)
 
 ### 🐛 Bug Fixes
