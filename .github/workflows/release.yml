@@ -3,6 +3,7 @@ name: Release
 on:
   workflow_dispatch:
   push:
+    branches: [main]
 
 jobs:
   release:
@@ -34,25 +35,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Semantic release runs its own Gradle build command.
-      # Only main branch will generate a release as specified by .releaserc
       - name: Release
         uses: cycjimmy/semantic-release-action@v8
         id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # MORPHE_SIGNING_KEY: ${{ secrets.MORPHE_SIGNING_KEY }}  # Uncomment if you have a signing key
 
       - name: Attest
         if: steps.release.outputs.new_release_published == 'true'
         uses: actions/attest-build-provenance@v4
         with:
           subject-name: 'opatches ${{ steps.release.outputs.new_release_git_tag }}'
-          subject-path: patches/build/libs/patches-*.mpp
+          subject-path: patches/build/libs/*.mpp
 
-      # Always verify compilation when semantic-release did not publish a release.
       - name: Verify project compiles
         if: steps.release.outputs.new_release_published != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew :patches:buildAndroid clean --no-daemon
+        run: ./gradlew :patches:build clean --no-daemon
